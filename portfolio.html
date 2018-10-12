@@ -10,6 +10,7 @@
 </head>
 
 <body>
+
   <header>
     <div class="masthead">
       <a class="logo" href="index.html">
@@ -35,9 +36,9 @@
   <!-- main page content  -->
   <div class="content">
     <div class="imageGrid">
-      <div><img src="img/cows-1.jpg" alt="" class="pictureGrid"></div>
-      <div><img src="img/cows-2.jpg" alt="" class="pictureGrid"></div>
-      <div><img src="img/cows-3.jpg" alt="" class="pictureGrid"></div>
+      <div><img src="img/cows-1.jpg" alt="Cow" class="pictureGrid myImg"></div>
+      <div><img src="img/cows-2.jpg" alt="Cow" class="pictureGrid myImg"></div>
+      <div><img src="img/cows-3.jpg" alt="" class="pictureGrid myImg"></div>
       <div><img src="img/cows-4.jpg" alt="" class="pictureGrid"></div>
       <div><img src="img/cows-5.jpg" alt="" class="pictureGrid"></div>
       <div><img src="img/cows-7.jpg" alt="" class="pictureGrid"></div>
@@ -64,6 +65,16 @@
       <div><img src="img/cows-29.jpg" alt="" class="pictureGrid"></div>
     </div>
 
+    <!-- Image modal from W3 schools https://www.w3schools.com/howto/howto_css_modal_images.asp -->
+    <div id="myModal" class="modal">
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img01">
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption"></div>
+    </div>
+
   </div>
   <footer>
     <div class="footer">
@@ -71,5 +82,7 @@
     </div>
   </footer>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="modal.js"></script>
 
 </html>

@@ -1,4 +1,5 @@
 @import 'normalize';
+@import 'modal';
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat|Open+Sans|Raleway');
 
 $siteColor: #ccc;
@@ -142,11 +143,18 @@ footer {
   grid-gap: 5px;
   row-gap: 5px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-template-rows: repeat(2, 200px);
+  grid-template-rows: repeat(0, 200px);
 
   .pictureGrid {
     width: 100%;
     height: 100%;
+    max-width: 1000px;
     object-fit: cover;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      opacity: 0.7;
+    }
   }
 }
