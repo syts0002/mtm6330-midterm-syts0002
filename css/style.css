@@ -457,6 +457,7 @@ footer {
   height: 40px;
   font-family: "Lato", "Open Sans", sans-serif;
   font-weight: 300;
+  letter-spacing: 1.8px;
   border-top: 1px solid rgba(0, 0, 0, 0.78); }
 
 .content {
@@ -488,3 +489,20 @@ footer {
     transition: 0.3s; }
     .imageGrid .pictureGrid:hover {
       opacity: 0.7; }
+
+.container {
+  display: flex;
+  max-width: 600px; }
+  @media screen and (max-width: 640px) {
+    .container {
+      padding: 50px; } }
+  .container .aboutImg {
+    max-width: 200px;
+    margin: 20px;
+    float: left; }
+    @media screen and (max-width: 640px) {
+      .container .aboutImg {
+        display: none; } }
+  .container .about {
+    display: flex;
+    flex-wrap: wrap; }

@@ -103,7 +103,6 @@ html body {
 
 footer {
   display: flex;
-
   bottom: 0;
   justify-content: center;
   background-color: $siteColor;
@@ -112,6 +111,7 @@ footer {
   height: 40px;
   font-family: $headingFont;
   font-weight: 300;
+  letter-spacing: 1.8px;
   border-top: 1px solid $textColor;
 }
 
@@ -156,5 +156,29 @@ footer {
     &:hover {
       opacity: 0.7;
     }
+  }
+}
+
+// about.html
+
+.container {
+  display: flex;
+  max-width: 600px;
+  @media screen and (max-width: 640px) {
+    padding: 50px;
+  }
+
+  .aboutImg {
+    max-width: 200px;
+    margin: 20px;
+    float: left;
+    @media screen and (max-width: 640px) {
+      display: none;
+    }
+  }
+
+  .about {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
