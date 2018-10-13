@@ -379,6 +379,11 @@ https://www.w3schools.com/howto/howto_css_modal_images.asp */
 
 html body {
   font-family: "Raleway", "Open Sans", sans-serif; }
+  html body h1 {
+    font-family: "Lato", "Open Sans", sans-serif;
+    letter-spacing: 0.6px;
+    font-size: 1.5rem;
+    margin-bottom: 1rem; }
 
 .masthead {
   display: flex;
@@ -473,7 +478,7 @@ footer {
     max-width: 100%; }
 
 .imageGrid {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 30px 0 30px 0;
   display: grid;
   grid-gap: 5px;
@@ -505,3 +510,36 @@ footer {
     @media screen and (max-width: 640px) {
       .container .aboutImg {
         display: none; } }
+
+.contact {
+  display: block;
+  max-width: 700px;
+  margin: 30px; }
+  .contact div {
+    display: flex; }
+
+.contactImage {
+  float: left; }
+  @media screen and (max-width: 600px) {
+    .contactImage {
+      display: none; } }
+
+.contactForm {
+  font-family: "Raleway", "Open Sans", sans-serif;
+  font-size: 1rem;
+  background-color: #fff; }
+  .contactForm input,
+  .contactForm textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 1px solid gray;
+    margin: 10px; }
+  .contactForm input[type='submit'] {
+    background-color: #ccc;
+    width: 7rem;
+    padding: 0.5rem;
+    border-radius: 6px;
+    cursor: pointer; }
+  .contactForm input[type='submit']:hover {
+    background-color: #999999; }
