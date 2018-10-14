@@ -36,14 +36,14 @@ html body {
     align-items: center;
     height: 100%;
     // mobile view
-    @media screen and (max-width: 640px) {
+    @media screen and (max-width: 680px) {
       // nav bar is folded into a column
       flex-direction: column;
       padding-top: 30px;
       padding-bottom: 10px;
     }
     // desktop view
-    @media screen and (min-width: 640px) {
+    @media screen and (min-width: 680px) {
       // nav bar unfolds into a row
       padding-top: 125px;
       flex-direction: row;
@@ -178,7 +178,7 @@ footer {
 
   .aboutImg {
     max-width: 200px;
-    margin: 20px;
+    margin: 20px 20px 20px 0;
     float: left;
     @media screen and (max-width: 640px) {
       display: none;
@@ -199,6 +199,7 @@ footer {
 
 .contactImage {
   float: left;
+  margin-right: 20px;
   @media screen and (max-width: 600px) {
     display: none;
   }

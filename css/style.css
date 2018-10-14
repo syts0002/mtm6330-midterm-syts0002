@@ -398,12 +398,12 @@ html body {
     justify-content: space-between;
     align-items: center;
     height: 100%; }
-    @media screen and (max-width: 640px) {
+    @media screen and (max-width: 680px) {
       .masthead .nav {
         flex-direction: column;
         padding-top: 30px;
         padding-bottom: 10px; } }
-    @media screen and (min-width: 640px) {
+    @media screen and (min-width: 680px) {
       .masthead .nav {
         padding-top: 125px;
         flex-direction: row;
@@ -505,7 +505,7 @@ footer {
       padding-right: 0; } }
   .container .aboutImg {
     max-width: 200px;
-    margin: 20px;
+    margin: 20px 20px 20px 0;
     float: left; }
     @media screen and (max-width: 640px) {
       .container .aboutImg {
@@ -519,7 +519,8 @@ footer {
     display: flex; }
 
 .contactImage {
-  float: left; }
+  float: left;
+  margin-right: 20px; }
   @media screen and (max-width: 600px) {
     .contactImage {
       display: none; } }
