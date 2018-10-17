@@ -384,6 +384,9 @@ html body {
     letter-spacing: 0.6px;
     font-size: 1.5rem;
     margin-bottom: 1rem; }
+  html body h2 {
+    font-family: "Lato", "Open Sans", sans-serif;
+    font-size: 1rem; }
 
 .masthead {
   display: flex;
@@ -473,9 +476,12 @@ footer {
 
 .imageContainer {
   max-width: 600px; }
+  .imageContainer .heading {
+    margin-left: 20px; }
   .imageContainer .landingImage {
     display: block;
-    max-width: 100%; }
+    max-width: 100%;
+    margin: 20px 0 20px 0; }
 
 .imageGrid {
   max-width: 1000px;
