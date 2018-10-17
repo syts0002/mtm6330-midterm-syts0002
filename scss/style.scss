@@ -1,9 +1,12 @@
+// normalize css from in class exercise
 @import 'normalize';
 @import 'modal';
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat|Open+Sans|Raleway');
 
+// global variables
 $siteColor: #ccc;
 $textColor: rgba(0, 0, 0, 0.78);
+$menuColor: rgba(0, 0, 0, 0.89);
 $fontStack: 'Raleway', 'Open Sans', sans-serif;
 $headingFont: 'Lato', 'Open Sans', sans-serif;
 
@@ -61,7 +64,7 @@ html body {
       text-transform: uppercase;
       font-family: $headingFont;
       font-size: 1.25rem;
-      color: rgba(0, 0, 0, 0.89);
+      color: $menuColor;
       text-decoration: none;
 
       &.active {
@@ -125,8 +128,8 @@ footer {
   border-top: 1px solid $textColor;
 }
 
+// min-height to keep footer stuck to bottom of screen
 .content {
-  // min-height to keep footer stuck to bottom of screen
   display: flex;
   align-items: center;
   justify-content: center;
@@ -134,7 +137,6 @@ footer {
 }
 
 // index.html
-
 .imageContainer {
   max-width: 600px;
 
@@ -160,6 +162,7 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-template-rows: repeat(0, 200px);
 
+  // individual pictures in grid
   .pictureGrid {
     width: 100%;
     height: 100%;
@@ -185,6 +188,7 @@ footer {
     padding-right: 0;
   }
 
+  // image floated so text will wrap
   .aboutImg {
     max-width: 200px;
     margin: 0px 20px 20px 0;
