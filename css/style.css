@@ -511,7 +511,7 @@ footer {
       padding-right: 0; } }
   .container .aboutImg {
     max-width: 200px;
-    margin: 20px 20px 20px 0;
+    margin: 0px 20px 20px 0;
     float: left; }
     @media screen and (max-width: 640px) {
       .container .aboutImg {
